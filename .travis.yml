@@ -5,7 +5,6 @@ python:
 install:
   - sudo apt-get update
   - sudo apt-get install -y mplayer2  ubuntu-restricted-extras
-  - sudo apt-get install -y libdvdcss2 libdvdnav4 libdvdread4
   - sudo apt-get install -y libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
   - sudo apt-get install -y python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
   - pip install -r requirements.txt
