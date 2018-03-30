@@ -4,15 +4,14 @@ python:
 # command to install dependencies
 install:
   - sudo apt-get update
-  - install CURL tool
-  - sudo apt-get install curl
+  - sudo apt-get install -y curl
   #load VideoLAN repository
   - curl ftp://ftp.videolan.org/pub/debian/videolan-apt.asc | sudo apt-key add -
   - echo "deb ftp://ftp.videolan.org/pub/debian/stable ./" | sudo tee /etc/apt/sources.list.d/libdvdcss.list
   - sudo apt-get update
-  - sudo apt-get install vlc vlc-data browser-plugin-vlc mplayer2
-  - sudo apt-get install ubuntu-restricted-extras
-  - sudo apt-get install libdvdcss2 libdvdnav4 libdvdread4
+  - sudo apt-get install -y vlc vlc-data browser-plugin-vlc mplayer2
+  - sudo apt-get install -y ubuntu-restricted-extras
+  - sudo apt-get install -y libdvdcss2 libdvdnav4 libdvdread4
   - sudo apt-get install -y libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
   - sudo apt-get install -y python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
   - pip install -r requirements.txt
